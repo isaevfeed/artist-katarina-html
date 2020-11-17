@@ -1,0 +1,18 @@
+.footer {
+    font-size: 18px;
+    color: $white;
+    background: $pirple;
+    padding: rem(30);
+
+    &>.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-socials>a {
+        font-size: 30px;
+        color: $pastel;
+        text-decoration: none;
+    }
+}

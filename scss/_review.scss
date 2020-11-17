@@ -1,0 +1,98 @@
+.review {
+    .container {
+        padding-bottom: rem(80) !important;
+    }
+
+    .title {
+        margin-bottom: rem(100)!important;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-item {
+        position: relative;
+        max-width: rem(212);
+        border: 2px solid $pirple;
+        border-bottom-width: 6px;
+        box-sizing: border-box;
+        background: $white;
+        padding: rem(30) rem(20);
+        margin: 0 rem(23);
+
+        &:nth-child(odd) {
+            transform: translateY(-30px);
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: rem(24);
+            height: rem(24);
+            position: absolute;
+            left: 50%;
+            top: rem(-12);
+            transform: translateX(-50%) rotateZ(45deg);
+            background: $pirple;
+        }
+
+        * {
+            text-align: center;
+        }
+
+        &-title {
+            font-family: "Pacifico", sans-serif;
+            margin-bottom: rem(30);
+        }
+
+        &-name {
+            color: $pirple;
+            font-size: 18px;
+            margin-bottom: rem(12);
+        }
+
+        &-type {
+            color: $gray;
+            font-size: 12px;
+        }
+
+        &-text {
+            color: $dark;
+            font-size: 12px;
+            line-height: 23px;
+            font-weight: normal;
+            font-family: "Roboto", serif;
+        }
+    }
+}
+
+.decor-cube-top, .decor-cube-bottom, .decor-cube-behind {
+    background: $white;
+    position: absolute;
+    border: 1px solid #1F0B2C;
+    transform: rotateZ(45deg);
+}
+
+.decor-cube-top {
+    width: rem(123);
+    height: rem(123);
+    top: rem(40);
+    left: 25%;
+}
+
+.decor-cube-bottom {
+    width: rem(172);
+    height: rem(172);
+    bottom: rem(-180);
+    left: 10%;
+}
+
+.decor-cube-behind {
+    width: rem(280);
+    height: rem(280);
+    bottom: rem(-80);
+    right: 14%;
+    z-index: -1;
+}

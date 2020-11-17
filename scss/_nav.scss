@@ -1,0 +1,52 @@
+.nav {
+    background: $dark;
+    border-bottom: 4px solid $pastel;
+
+    &>.container {
+        position: relative;
+    }
+
+    &-ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    &-item {
+        display: block;
+        padding: 22px 0;
+    
+        a {
+            display: block;
+            color: $white;
+            font-size: 21px;
+            font-family: Pacifico;
+            text-decoration: none;
+            transform: translateY(0px);
+            transition: all.3s;
+    
+            &:hover {
+                color: $pastel;            
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    &-decore {
+        position: absolute;
+        width: rem(50);
+        padding: rem(50);
+        top: rem(-100);
+        left: rem(60);
+
+        &-inside {
+            position: absolute;
+            width: rem(110);
+            height: rem(110);
+            left: 0;
+            top: 0;
+            transform: rotate(20deg);
+            border: 2px solid $gray;
+        }
+    }
+}
